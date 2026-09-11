@@ -782,14 +782,17 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Composable
+fun MamboNombre() {
+    Text("jose paredes")
+}
+
 @Preview(
     showBackground = true,
     showSystemUi = true
 )
 @Composable
 fun VistaPrevia() {
-
-    MaterialTheme {
-        MainActivity().PantallaComponentes()
-    }
+    MamboNombre()
+    MainActivity().PantallaComponentes()
 }
